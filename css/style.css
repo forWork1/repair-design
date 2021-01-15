@@ -74,6 +74,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */ }
 
@@ -306,15 +307,6 @@ template {
 .container {
   max-width: 1256px;
   margin: auto; }
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
-.logo {
-  color: #e3b873;
-  text-transform: uppercase; }
 
 .button {
   padding: 13px 20px;
