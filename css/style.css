@@ -362,6 +362,16 @@ img {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive; }
+    .section-title__disc {
+      color: #959595;
+      max-width: 55.92rem;
+      margin: 0 auto;
+      margin-top: 2rem;
+      font-size: 1rem;
+      line-height: 1.94rem;
+      font-style: normal;
+      font-weight: normal;
+      text-transform: none; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -499,7 +509,8 @@ img {
     color: #e3b873; }
 
 .types__section-title {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  margin-top: 9rem; }
 
 .row {
   display: flex;
