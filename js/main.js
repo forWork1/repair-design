@@ -45,4 +45,34 @@ $(document).ready(function () {
 
     new WOW().init();
 
+    $('.modal__form').validate({
+        errorClass: "invalid",
+        rules: {
+            // simple rule, converted to {required:true}
+            userName: {
+                required: true,
+                minlength: 3
+            },
+            userPhone: "required",
+            // compound rule
+            userEmail: {
+              required: true,
+              email: true
+            }
+          },
+          messages: {
+            userName: {
+                required:"Имя обязательно",
+                minlength: "Имя не короче 3 символов"
+            }, 
+            userPhone: "Телефон обязателен",
+            userEmail: {
+              required: "Обязательно укажите ваш Email",
+              email: "Введите в формате: name@domain.com"
+            }
+          }
+    });
+
+    $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7 (___) __-__-___"});
+
 });

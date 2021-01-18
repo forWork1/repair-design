@@ -390,6 +390,12 @@ template {
   .policy__label--center {
     justify-content: center; }
 
+label.invalid {
+  color: red; }
+
+input.invalid {
+  border-bottom: 1px solid red; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -738,10 +744,12 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.429rem; }
-    .modal__input:last-of-type {
-      margin-bottom: 1rem; }
+  .modal__input:last-of-type {
+    margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
