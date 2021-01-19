@@ -844,6 +844,24 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__map {
+    margin: auto;
+    margin-bottom: 4rem;
+    max-width: 66.07rem; }
+  .footer__end {
+    margin-top: 3.714rem;
+    color: #e3b873;
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1rem;
+    line-height: 1.98rem;
+    text-align: center; }
+  .footer__icons {
+    text-align: center;
+    margin-top: 1.857rem;
+    margin-bottom: 3rem; }
+    .footer__icons-img {
+      margin-left: 1rem; }
 
 @media screen and (max-width: 1200px) {
   html {
