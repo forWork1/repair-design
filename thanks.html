@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>RostovD</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="menu">
+                <div class="logo menu__logo animate__animated animate__backInDown">Repair Design Project</div>
+                <nav class="nav menu__nav">
+                    <a href="#" class="nav__item">Главная</a>
+                    <a href="#" class="nav__item">Проекты</a>
+                    <a href="#" class="nav__item">Замер</a>
+                    <a href="#" class="nav__item">Команда</a>
+                    <a href="#" class="nav__item">Отзывы</a>
+                    <a href="#" class="nav__item">Контакты</a>
+                </nav>
+                <!-- /.nav -->
+                <div class="contacts menu__contacts">
+                    <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
+                    <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+                </div>
+            </div>
+            <!-- /.menu -->
+        </div>
+        <!-- /.container -->
+    </header>
+    <main>
+        <section class="hero">
+            <div class="instagram hero__instagram">
+                <a href="#" class="instagram__link">Instagram</a>
+            </div>
+            <div class="container">
+                <div class="hero__content wow animate__animated animate__bounceInDown">
+                    <h1 class="title hero__title">Спасибо&nbsp;<span class="title--primary">за заявку</span></h1>
+                    <p class="hero__text">
+                        Наш сотрудник свяжется с вами в течение 24 часов
+                    </p>
+                </div>
+                <!-- /.hero__content -->
+            </div>
+            <!-- /.container -->
+            <a href="#" class="hero__scroll-down wow animate__animated animate__shakeY animate__repeat-3 animate__delay-2s">листайте вниз</a>
+        </section>
+        <!-- /.hero -->
+    </main>
+    <footer class="footer section--dark">
+        <div class="container">
+            <div class="end footer__end">
+                <h2>Ростов на дону, Торговый центр Plaza <br>Прямой телефон +7 (999) 768 32 99</h2>
+            </div>
+            <div class="icons footer__icons">
+                <img src="img/mail.svg" alt="mail-icon" class="footer__icons-img">
+                <img src="img/inst.svg" alt="inst-icon" class="footer__icons-img">
+            </div>
+            <div class="map footer__map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0e8055f53cc29dca37c8e21823cef6e021b9a9e5ba061cce11853379e4de72ea&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
+        </div>
+        <!-- /.container -->
+        <div class="footer__menu">
+            <div class="container">
+                <div class="menu">
+                    <div class="logo menu__logo animate__animated animate__backInDown">Repair Design Project</div>
+                    <nav class="nav menu__nav">
+                        <a href="#" class="nav__item">Главная</a>
+                        <a href="#" class="nav__item">Проекты</a>
+                        <a href="#" class="nav__item">Замер</a>
+                        <a href="#" class="nav__item">Команда</a>
+                        <a href="#" class="nav__item">Отзывы</a>
+                        <a href="#" class="nav__item">Контакты</a>
+                    </nav>
+                    <!-- /.nav -->
+                    <div class="contacts menu__contacts">
+                        <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
+                        <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+                    </div>
+                </div>
+                <!-- /.menu -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.footer__menu -->
+    </footer>
+    <div class="modal">
+        <div class="modal__dialog">
+            <button class="modal__close"></button>
+            <h3 class="modal__title">
+                Оставьте заявку и наш менеджер свяжется с вами
+            </h3>
+            <form action="send.php" method="POST" class="form modal__form">
+                <div class="input-group modal__input-group">
+                    <label for="user-name" class="label form__label label--light">Имя</label>
+                    <input type="text" name="userName" class="input form__input modal__input input--light" id="user-name" placeholder="Как вас зовут:">
+                </div>
+                <div class="input-group modal__input-group">
+                    <label for="user-phone" class="label form__label label--light">Телефон</label>
+                    <input type="tel" name="userPhone" class="input form__input modal__input input--light" id="user-phone" placeholder="Ваш номер телефона:">
+                </div>
+                <div class="input-group modal__input-group">
+                    <label for="user-email" class="label form__label label--light">Email</label>
+                    <input type="email" name="userEmail" class="input form__input modal__input input--light" id="user-email" placeholder="Ваш email:">
+                </div>
+                <div class="policy modal__policy">
+                    <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
+                    <label for="policy-checkbox" class="policy__label">я соглашаюсь с обработкой данных</label>
+                </div>
+                <!-- /.policy -->
+                <button class="button button--primary modal__button">
+                    Отправить заявку
+                </button>
+            </form>
+            <!-- /.form modal__form -->
+        </div>
+        <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
