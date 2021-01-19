@@ -70,6 +70,18 @@ $(document).ready(function () {
               required: "Обязательно укажите ваш Email",
               email: "Введите в формате: name@domain.com"
             }
+          },
+          submitHandler: function(form) {
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    alert('Форма отправлена, спасибо за заявку, мы с вами свяжемся');
+                    $(form)[0].reset();
+                    modal.removeClass('modal--visible');
+                }
+            });
           }
     });
 
