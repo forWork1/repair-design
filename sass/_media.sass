@@ -51,11 +51,50 @@
             margin-bottom: 2.28rem
         &__button
             display: block
-            min-width: 22.86rem
+            width: 100%
             margin-bottom: 1.85rem
+    #button
+        display: none
+            
+    .row
+        align-items: flex-start
+    .col-50
+        width: 100%
+    .swiper-slide
+        display: flex
+        flex-wrap: wrap
+        margin-top: 2rem
+    .control
+        &__form
+            display: flex
+            flex-direction: column
+            max-width: 55rem
+            margin: auto
+        &__policy
+            flex-basis: 100%
+            margin-top: 2.1rem
+        &-label
+            justify-content: center
+        &__input-group
+            display: flex
+            flex-direction: column
+            flex-basis: 30%
+            margin-bottom: 3.6rem
+        &__button
+            margin-top: 1rem
+    .footer
+        &__wrap
+        &__button
+            flex-basis: 100%
+        &__end
+            font-size: 0.9rem
 
 @media screen and ( max-height: 520px )
     .hero
         &__scroll-down
             display: none
-    
+
+@media screen and ( max-width: 320px )
+    .control
+        &__video
+            

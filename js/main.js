@@ -85,6 +85,77 @@ $(document).ready(function () {
           }
     });
 
+    $('a[href*="#"]').on('click', function (e) {
+        e.preventDefault();
+       
+        $('html, body').animate({
+          scrollTop: $($(this).attr('href')).offset().top
+        }, 500, 'linear');
+      });
+  
+      var btn = $('#button');
+  
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+          btn.addClass('show');
+        } else {
+          btn.removeClass('show');
+        }
+      });
+  
+      btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+      });
+
+    $('.control__form').validate({
+        errorClass: "invalid",
+        rules: {
+            // simple rule, converted to {required:true}
+            userName: {
+                required: true,
+                minlength: 4
+            },
+            userPhone: "required",
+            // compound rule
+            userEmail: {
+              required: true,
+              email: true
+            }
+          },
+          messages: {
+            userName: {
+                required: "Имя обязательно",
+                minlength: "Имя не короче четырех букв"
+            }, 
+            userPhone: "Телефон обязателен",
+          }
+    });
+  
+    $('.footer__form').validate({
+      errorClass: "invalid",
+      rules: {
+          // simple rule, converted to {required:true}
+          userName: {
+              required: true,
+              minlength: 4
+          },
+          userPhone: "required",
+          // compound rule
+          userEmail: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          userName: {
+              required: "Имя обязательно",
+              minlength: "Имя не короче четырех букв"
+          }, 
+          userPhone: "Телефон обязателен",
+        }
+  });
+
     $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7 (___) __-__-___"});
 
 });
